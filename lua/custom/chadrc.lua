@@ -3,7 +3,6 @@
 local M = {}
 M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 
-
 -- NOTE: To use this, make a copy with `cp example_chadrc.lua chadrc.lua`
 
 --------------------------------------------------------------------
@@ -15,9 +14,9 @@ M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 --    relativenumber = true,
 -- }
 
- M.ui = {
-   theme = "onedark-deep"
- }
+M.ui = {
+   theme = "onedark-deep",
+}
 
 -- NvChad included plugin options & overrides
 M.plugins = {
@@ -28,9 +27,8 @@ M.plugins = {
       --   },
 
       lspconfig = {
-        setup_lspconf = "custom/plugins/lspconfig"
-     },
-     
+         setup_lspconf = "custom/plugins/lspconfig",
+      },
    },
    -- To change the Packer `config` of a plugin that comes with NvChad,
    -- add a table entry below matching the plugin github name
@@ -39,8 +37,8 @@ M.plugins = {
    --              use "(custom.configs).my_func()" to call a function
    --              use "custom.blankline" to call a file
    default_plugin_config_replace = {
-     nvim_tree = "custom/plugins/nvim-tree",
-     nvim_web_devicons = "custom.plugins.nvim-dev-icons",
+      nvim_tree = "custom/plugins/nvim-tree",
+      nvim_web_devicons = "custom.plugins.nvim-dev-icons",
    },
 }
 

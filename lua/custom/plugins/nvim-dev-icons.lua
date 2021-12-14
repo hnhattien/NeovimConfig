@@ -1,4 +1,3 @@
-
 local present, icons = pcall(require, "nvim-web-devicons")
 if not present then
    return
@@ -11,13 +10,12 @@ icons.setup {
       react = {
          icon = "ﰆ",
          color = colors.blue,
-         name = "jsx"
+         name = "jsx",
       },
       reactts = {
          icon = "ﰆ",
          color = colors.blue,
-         name = "tsx"
-
+         name = "tsx",
       },
       c = {
          icon = "",

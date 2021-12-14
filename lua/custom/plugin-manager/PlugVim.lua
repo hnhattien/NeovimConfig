@@ -1,4 +1,3 @@
-
 vim.cmd [[
 set nocompatible
 call plug#begin('~/.vim/plugged')
